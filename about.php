@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Logistica - Shipping Company Website Template</title>
+    <title>About Us - Yuven Cargo</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -43,208 +43,193 @@
 
     <?php include 'header.php'; ?>
 
+    <div class="banner">
+        <img src="img/cargo-container.jpg" alt="">
+        <div class="banner-text">
+            <h1>About Us</h1>
+        </div>
+    </div>
+
+
+    <style>
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            /* Banner height */
+            background-color: #000;
+            /* Fallback background color */
+            overflow: hidden;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Ensures the image covers the entire banner area */
+            opacity: 40%;
+        }
+
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+        }
+
+        .banner-text h1 {
+            margin: 0;
+            font-size: 48px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .banner-text p {
+            margin: 10px 0 0;
+            font-size: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .banner {
+                height: 200px;
+                /* Daha küçük cihazlar için banner yüksekliğini ayarla */
+            }
+
+            .banner-text h1 {
+                font-size: 32px;
+                /* Başlık boyutunu küçült */
+            }
+
+            .banner-text p {
+                font-size: 16px;
+                /* Alt başlık boyutunu küçült */
+            }
+        }
+    </style>
+    <!-- Main Content of the Page -->
 
     <!-- About Start -->
-    <div class="container-fluid overflow-hidden py-5 px-lg-0">
-        <div class="container about py-5 px-lg-0">
-            <div class="row g-5 mx-lg-0">
-                <div class="col-lg-6 ps-lg-0 wow fadeInLeft" data-wow-delay="0.1s" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/about.jpg" style="object-fit: cover;" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
-                    <h6 class="text-secondary text-uppercase mb-3">About Us</h6>
-                    <h1 class="mb-5">Quick Transport and Logistics Solutions</h1>
-                    <p class="mb-5">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                    <div class="row g-4 mb-5">
-                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
-                            <i class="fa fa-globe fa-3x text-primary mb-3"></i>
-                            <h5>Global Coverage</h5>
-                            <p class="m-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam justo.</p>
-                        </div>
-                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
-                            <i class="fa fa-shipping-fast fa-3x text-primary mb-3"></i>
-                            <h5>On Time Delivery</h5>
-                            <p class="m-0">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam justo.</p>
-                        </div>
-                    </div>
-                    <a href="" class="btn btn-primary py-3 px-5">Explore More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
 
 
-    <!-- Fact Start -->
-    <div class="container-xxl py-5">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="text-secondary text-uppercase mb-3">Some Facts</h6>
-                    <h1 class="mb-5">#1 Place To Manage All Of Your Shipments</h1>
-                    <p class="mb-5">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                    <div class="d-flex align-items-center">
-                        <i class="fa fa-headphones fa-2x flex-shrink-0 bg-primary p-3 text-white"></i>
-                        <div class="ps-4">
-                            <h6>Call for any query!</h6>
-                            <h3 class="text-primary m-0">+012 345 6789</h3>
-                        </div>
+    <section class="about-section py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Our Industry -->
+                <div class="col-md-4 text-center">
+                    <div class="about-box p-4">
+                        <h4 class="section-title mb-3">Our Industry</h4>
+                        <p>As experienced freight forwarders, we act as shipping agents for our customers and organize the transportation of their goods. Our large carrier network provides us with a diverse set of services and access to any destination. Yuven World Cargo's team can organize your entire shipment and cater to your needs as a shipper. We make freight forwarding look easy so your destination feels much closer.</p>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="row g-4 align-items-center">
-                        <div class="col-sm-6">
-                            <div class="bg-primary p-4 mb-4 wow fadeIn" data-wow-delay="0.3s">
-                                <i class="fa fa-users fa-2x text-white mb-3"></i>
-                                <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
-                                <p class="text-white mb-0">Happy Clients</p>
-                            </div>
-                            <div class="bg-secondary p-4 wow fadeIn" data-wow-delay="0.5s">
-                                <i class="fa fa-ship fa-2x text-white mb-3"></i>
-                                <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
-                                <p class="text-white mb-0">Complete Shipments</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="bg-success p-4 wow fadeIn" data-wow-delay="0.7s">
-                                <i class="fa fa-star fa-2x text-white mb-3"></i>
-                                <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
-                                <p class="text-white mb-0">Customer Reviews</p>
-                            </div>
-                        </div>
+                <!-- Our Business -->
+                <div class="col-md-4 text-center">
+                    <div class="about-box p-4">
+                        <h4 class="section-title mb-3">Our Business</h4>
+                        <p>Yuven World Cargo is made up of a hardworking team that understands what it takes to be successful in this industry. We focus on our customers by asking the right questions and finding the perfect service to match their needs. Our years of experience give us a competitive edge in the shipping industry. We have developed an infrastructure that allows us to offer the most competitive rates in the market. Ultimately, whether you’re importing or exporting, we can ensure safe, efficient, and cost-effective delivery of your goods.</p>
+                    </div>
+                </div>
+                <!-- Our Story -->
+                <div class="col-md-4 text-center">
+                    <div class="about-box p-4">
+                        <h4 class="section-title mb-3">Our Story</h4>
+                        <p>Yuven World Cargo has implemented new and improved shipping lanes, expanded their service offerings, and provided thousands of customers with expert service. In addition to developing World Cargo’s entire Ocean Freight division, we continue to develop the business’s focus on corporations and individuals. With an emphasis on service and experience, you can rest easy knowing you’re in good hands with Yuven World Cargo.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Fact End -->
+    </section>
 
-
-    <!-- Feature Start -->
-    <div class="container-fluid overflow-hidden py-5 px-lg-0">
+        <!-- Feature Start -->
+        <div class="container-fluid overflow-hidden py-5 px-lg-0">
         <div class="container feature py-5 px-lg-0">
             <div class="row g-5 mx-lg-0">
                 <div class="col-lg-6 feature-text wow fadeInUp" data-wow-delay="0.1s">
                     <h6 class="text-secondary text-uppercase mb-3">Our Features</h6>
-                    <h1 class="mb-5">We Are Trusted Logistics Company Since 1990</h1>
+                    <h1 class="mb-5">We Are Your Trusted Global Logistics Partner</h1>
                     <div class="d-flex mb-5 wow fadeInUp" data-wow-delay="0.3s">
                         <i class="fa fa-globe text-primary fa-3x flex-shrink-0"></i>
                         <div class="ms-4">
                             <h5>Worldwide Service</h5>
-                            <p class="mb-0">Diam dolor ipsum sit amet eos erat ipsum lorem sed stet lorem sit clita duo justo magna erat amet</p>
+                            <p class="mb-0">Wherever your business takes you, our global logistics solutions ensure seamless and reliable transportation to any destination worldwide.</p>
                         </div>
                     </div>
                     <div class="d-flex mb-5 wow fadeIn" data-wow-delay="0.5s">
                         <i class="fa fa-shipping-fast text-primary fa-3x flex-shrink-0"></i>
                         <div class="ms-4">
                             <h5>On Time Delivery</h5>
-                            <p class="mb-0">Diam dolor ipsum sit amet eos erat ipsum lorem sed stet lorem sit clita duo justo magna erat amet</p>
+                            <p class="mb-0">We prioritize punctuality with every shipment, ensuring your cargo reaches its destination on schedule, every time.</p>
                         </div>
                     </div>
                     <div class="d-flex mb-0 wow fadeInUp" data-wow-delay="0.7s">
                         <i class="fa fa-headphones text-primary fa-3x flex-shrink-0"></i>
                         <div class="ms-4">
-                            <h5>24/7 Telephone Support</h5>
-                            <p class="mb-0">Diam dolor ipsum sit amet eos erat ipsum lorem sed stet lorem sit clita duo justo magna erat amet</p>
+                            <h5>Telephone Support</h5>
+                            <p class="mb-0">Our dedicated team is available around the clock to provide you with expert assistance and support whenever you need it.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 pe-lg-0 wow fadeInRight" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/feature.jpg" style="object-fit: cover;" alt="">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/truck.png" style="object-fit: cover;" alt="">
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        
     <!-- Feature End -->
 
+    <style>
+        .about-section {
+            background-color: #f8f9fa;
+            /* Hafif bir gri arka plan */
+        }
 
-    <!-- Team Start -->
-    <div class="container-xxl py-5">
-        <div class="container py-5">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="text-secondary text-uppercase">Our Team</h6>
-                <h1 class="mb-5">Expert Team Members</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
-                        </div>
-                        <h5 class="mb-0">Full Name</h5>
-                        <p>Designation</p>
-                        <div class="btn-slide mt-1">
-                            <i class="fa fa-share"></i>
-                            <span>
-                                <a href=""><i class="fab fa-facebook-f"></i></a>
-                                <a href=""><i class="fab fa-twitter"></i></a>
-                                <a href=""><i class="fab fa-instagram"></i></a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
-                        </div>
-                        <h5 class="mb-0">Full Name</h5>
-                        <p>Designation</p>
-                        <div class="btn-slide mt-1">
-                            <i class="fa fa-share"></i>
-                            <span>
-                                <a href=""><i class="fab fa-facebook-f"></i></a>
-                                <a href=""><i class="fab fa-twitter"></i></a>
-                                <a href=""><i class="fab fa-instagram"></i></a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
-                        </div>
-                        <h5 class="mb-0">Full Name</h5>
-                        <p>Designation</p>
-                        <div class="btn-slide mt-1">
-                            <i class="fa fa-share"></i>
-                            <span>
-                                <a href=""><i class="fab fa-facebook-f"></i></a>
-                                <a href=""><i class="fab fa-twitter"></i></a>
-                                <a href=""><i class="fab fa-instagram"></i></a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
-                    <div class="team-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
-                        </div>
-                        <h5 class="mb-0">Full Name</h5>
-                        <p>Designation</p>
-                        <div class="btn-slide mt-1">
-                            <i class="fa fa-share"></i>
-                            <span>
-                                <a href=""><i class="fab fa-facebook-f"></i></a>
-                                <a href=""><i class="fab fa-twitter"></i></a>
-                                <a href=""><i class="fab fa-instagram"></i></a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
-        
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary);
+            /* Bootstrap ana renk */
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--primary);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
 
-<?php include 'footer.php' ?>
+        .about-box {
+            background-color: #ffffff;
+            /* Beyaz kart tasarımı */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Hafif gölge efekti */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .about-box:hover {
+            transform: translateY(-10px);
+            /* Hover sırasında yükselen kart efekti */
+        }
+
+        .about-box p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+            /* Hafif gri metin rengi */
+        }
+
+        @media (max-width: 768px) {
+            .about-box {
+                margin-bottom: 20px;
+                /* Mobilde kutuların arasında boşluk bırak */
+            }
+        }
+    </style>
+    <!-- About End -->
+
+
+
+
+    <?php include 'footer.php' ?>
 
 
     <!-- Back to Top -->
