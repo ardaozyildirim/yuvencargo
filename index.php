@@ -94,7 +94,7 @@
                 <div class="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
                     <h6 class="text-secondary text-uppercase mb-3">About Us</h6>
                     <h1 class="mb-5">Your Trusted Partner in Global Logistics</h1>
-                    <p class="mb-5">At Yuven World Cargo, we specialize in delivering seamless and efficient logistics solutions across air, ground, and ocean freight. With years of experience and a dedicated team, we cater to the unique needs of our clients, ensuring timely, safe, and cost-effective transportation. Our global network and commitment to excellence make us a trusted partner for businesses and individuals worldwide.</p>
+                    <p class="mb-5">Yuven World Cargo has implemented new and improved shipping lanes, expanded their service offerings, and provided thousands of customers with expert service. In addition to developing World Cargo’s entire Ocean Freight division, we continue to develop the business’s focus on corporations and individuals...</p>
                     <div class="row g-4 mb-5">
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                             <i class="fa fa-globe fa-3x text-primary mb-3"></i>
