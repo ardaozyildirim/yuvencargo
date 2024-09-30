@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Yuven World Cargo Company</title>
+    <title>Contact - Yuven Cargo</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -112,23 +112,23 @@
 
     <div class="container-fluid overflow-hidden py-5 px-lg-0">
     <div class="container contact-page py-5 px-lg-0">
-        <div class="row g-5 mx-lg-0">
+        <div class="row g-5 mx-lg-0 align-items-stretch"> <!-- align-items-stretch eklendi -->
             <!-- İletişim bilgileri kısmı -->
-            <div class="col-md-6 pe-lg-0 wow fadeInRight" data-wow-delay="0.1s">
+            <div class="col-md-6 pe-lg-0 wow fadeInRight d-flex flex-column" data-wow-delay="0.1s"> <!-- d-flex flex-column eklendi -->
                 <h6 class="text-secondary text-uppercase">Contact Information</h6>
                 <h1 class="mb-4">Get In Touch With Us</h1>
-                <div class="bg-light p-4">
-                    <p class="mb-3"><i class="fa fa-map-marker-alt text-primary me-3"></i>123 Street, City, Country</p>
-                    <p class="mb-3"><i class="fa fa-envelope text-primary me-3"></i>info@example.com</p>
-                    <p class="mb-3"><i class="fa fa-phone-alt text-primary me-3"></i>+123 456 7890</p>
-                    <p class="mb-0"><i class="fa fa-clock text-primary me-3"></i>Mon - Fri: 9AM - 6PM</p>
+                <div class="bg-light p-4 flex-grow-1 d-flex flex-column justify-content-around"> <!-- flex-grow-1 eklendi -->
+                    <p class="mb-3 fs-5"><i class="fa fa-map-marker-alt text-primary me-3"></i>Rue Omar Kaddeh Imm. Le Montplaisir 2ème Étage B25 1073 Montplaisir, Tunisie</p>
+                    <p class="mb-3 fs-5"><i class="fa fa-envelope text-primary me-3"></i>info@yuvencargo.com</p>
+                    <p class="mb-3 fs-5"><i class="fa fa-phone-alt text-primary me-3"></i>+90 000 00 00</p>
+                    <p class="mb-0 fs-5"><i class="fa fa-clock text-primary me-3"></i>Mon - Fri: 9AM - 6PM</p>
                 </div>
             </div>
             <!-- Contact form kısmı -->
-            <div class="col-md-6 contact-form wow fadeIn" data-wow-delay="0.1s">
+            <div class="col-md-6 contact-form wow fadeIn d-flex flex-column" data-wow-delay="0.1s"> <!-- d-flex flex-column eklendi -->
                 <h6 class="text-secondary text-uppercase">Get In Touch</h6>
                 <h1 class="mb-4">Contact For Any Query</h1>
-                <div class="bg-light p-4">
+                <div class="bg-light p-4 flex-grow-1"> <!-- flex-grow-1 eklendi -->
                     <form>
                         <div class="row g-3">
                             <div class="col-md-6">
@@ -167,14 +167,14 @@
 </div>
 
 
-    <!-- Contact End -->
 
+    <!-- Contact End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 <?php include 'footer.php' ?>
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->

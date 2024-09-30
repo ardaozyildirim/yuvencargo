@@ -131,7 +131,7 @@
                             <img class="img-fluid" src="img/service-1.jpg" alt="">
                         </div>
                         <h4 class="mb-3">Air Cargo</h4>
-                        <p>"When timing is your biggest priority, air cargo's your best shipping solution for speed and reliability."</p>
+                        <p>When timing is your biggest priority, air cargo's your best shipping solution for speed and reliability.</p>
                         <a class="btn-slide mt-2" href="service.php"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                     </div>
                 </div>
@@ -311,8 +311,6 @@
     <!-- Testimonial End -->
 
 
-<?php include 'footer.php'?>
-
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
@@ -332,3 +330,6 @@
 </body>
 
 </html>
+
+
+<?php include 'footer.php'?>
