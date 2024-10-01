@@ -255,62 +255,6 @@
 
 
 
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="text-center">
-                <h6 class="text-secondary text-uppercase">Testimonial</h6>
-                <h1 class="mb-0">Our Clients Say!</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="testimonial-item p-4 my-5">
-                    <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
-                    <div class="d-flex align-items-end mb-4">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Sarah Johnson</h5>
-                            <p class="m-0">Supply Chain Manager</p>
-                        </div>
-                    </div>
-                    <p class="mb-0">"Yuven World Cargo has been a reliable partner for our international shipments. Their on-time delivery and professional handling of our goods have greatly enhanced our supply chain operations."
-                    </p>
-                </div>
-                <div class="testimonial-item p-4 my-5">
-                    <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
-                    <div class="d-flex align-items-end mb-4">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Michael Thompson</h5>
-                            <p class="m-0">CEO, Import/Export Company</p>
-                        </div>
-                    </div>
-                    <p class="mb-0">"Working with Yuven World Cargo has streamlined our logistics process. Their global coverage and personalized service ensure that our products reach their destinations efficiently and safely."
-                    </p>
-                </div>
-                <div class="testimonial-item p-4 my-5">
-                    <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
-                    <div class="d-flex align-items-end mb-4">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Anthony Davis</h5>
-                            <p class="m-0">Operations Director</p>
-                        </div>
-                    </div>
-                    <p class="mb-0">"Yuven World Cargo consistently goes above and beyond to meet our logistics needs. Their customer support team is always available, and their attention to detail is unmatched."</p>
-                </div>
-                <div class="testimonial-item p-4 my-5">
-                    <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
-                    <div class="d-flex align-items-end mb-4">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Emily Lee</h5>
-                            <p class="m-0">Business Owner</p>
-                        </div>
-                    </div>
-                    <p class="mb-0">"I trust Yuven World Cargo with all my shipments. Their competitive pricing and exceptional service make them the best logistics company we’ve worked with."</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
-
-
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
