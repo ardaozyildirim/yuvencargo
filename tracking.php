@@ -105,7 +105,7 @@ icon: "warning",});
                 <span></span>
                 <span></span>
                 <span></span>
-                <button style="background: #e15361; border: none; font-size: 16px; color: white; padding: 10px 20px; border-radius: 5px;">Track Your Package</button>
+                <button class="animated-border-button" style="position: relative; background: #f83c44;border: none;font-size: 16pxcolor: white padding: 10px 20px;border-radius: 5px;  cursor:pointer overflow: hidden;">Track Your Package</button>
             </a>
         </form>
     </div>
@@ -166,9 +166,11 @@ button {
     color: white;
     cursor: pointer;
     padding: 10px 20px;
-    background-color: #e15361;
+    background-color: #f83c44;
     border-radius: 5px;
 }
+
+
 </style>
 
 <?php include 'footer.php' ?>
