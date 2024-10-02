@@ -1,30 +1,14 @@
 <!DOCTYPE html>
 <!-- saved from url=(0037)http://transmena.com.tr/Tracking.html -->
-<html lang="en-US" data-lt-installed="true"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transmena Shipping Company</title>
-    <link rel="stylesheet" href="./tracking_files/components.css">
-    <link rel="stylesheet" href="./tracking_files/icons.css">
-    <link rel="stylesheet" href="./tracking_files/responsee.css">
-    <link rel="stylesheet" href="./tracking_files/owl.carousel.css">
-    <link rel="stylesheet" href="./tracking_files/owl.theme.css">
-    <!-- CUSTOM STYLE -->
-    <link rel="stylesheet" href="./tracking_files/template-style.css">
-    <link href="./tracking_files/css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="./tracking_files/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="./tracking_files/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="./tracking_files/validation.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-</head>
+<html lang="en-US" data-lt-installed="true"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style>
+<?php include 'head.php'; ?>
 
 <body class="size-1140" cz-shortcut-listen="true">
 <!-- HEADER -->
 
-
 <?php
 
-include 'partials/header.php';
+include 'header.php';
 include "TrackingFormHandler.php";
 
 $trackingFormHandler =  new TrackingFormHandler();
@@ -125,84 +109,8 @@ $result = $trackingFormHandler->getShipmentInformation($_REQUEST['tracking-numbe
     </main>
 
 <!--FOOTER -->
-<footer>
-    <!-- Main Footer -->
-    <section class="section background-dark">
-        <div class="line">
-            <div class="margin">
-                <!-- Collumn 1 -->
-                <div class="s-12 m-12 l-4 margin-m-bottom-2x">
-                    <h4 class="text-uppercase text-strong">Our Philosophy</h4>
-                    <p class="text-size-20"><em>"We Carry Responsibility ."</em></p><p>
-
-                    </p><div class="line">
-                        <h4 class="text-uppercase text-strong margin-top-30">About Our Company</h4>
-                        <div class="margin">
-                            <div class="s-12 m-12 l-4 margin-m-bottom">
-                                <a class="image-hover-zoom" href="http://transmena.com.tr/"><img src="./tracking_files/blog-04.png" alt=""></a>
-                            </div>
-                            <div class="s-12 m-12 l-8 margin-m-bottom">
-                                <p>Transmena Shipping Company is a logistics company that provides accessible advice with the quality standards of a multinational.</p>
-                                <a class="text-more-info text-primary-hover" href="http://transmena.com.tr/about.html">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Collumn 2 -->
-                <div class="right s-12 m-12 l-4 margin-m-bottom-2x">
-                    <h4 class="text-uppercase text-strong">Contact Us</h4>
-                    <p><b>TRANSMENA SHIPPING COMPANY TİCARET LİMİTED ŞİRKETİ</b></p>
-                    <div class="line">
-                        <div class="s-1 m-1 l-1 text-center">
-                            <i class="icon-placepin text-primary text-size-12"></i>
-                        </div>
-                        <div class="s-11 m-11 l-11 margin-bottom-10">
-                            <p><b>Adress:</b>  Ziya Gökalp Mah. Süleyman Demirel Blv. No:7/E - D:103  Po Box:34490 Başakşehir /İstanbul / Türkiye </p>
-                        </div>
-                    </div>
-                    <div class="line">
-                        <div class="s-1 m-1 l-1 text-center">
-                            <i class="icon-mail text-primary text-size-12"></i>
-                        </div>
-                        <div class="s-11 m-11 l-11 margin-bottom-10">
-                            <p><a href="http://transmena.com.tr/" class="text-primary-hover"><b>E-mail:</b> info@transmena.com.tr</a></p>
-                        </div>
-                    </div>
-                    <div class="line">
-                        <div class="s-1 m-1 l-1 text-center">
-                            <i class="icon-smartphone text-primary text-size-12"></i>
-                        </div>
-                        <div class="s-11 m-11 l-11 margin-bottom-10">
-                            <p><b>Phone:</b> +90 212 803 03 23</p>
-                        </div>
-                    </div>
-                    <div class="line">
-                        <div class="s-1 m-1 l-1 text-center">
-                            <i class="icon-printer text-primary text-size-12"></i>
-                        </div>
-                        <div class="s-11 m-11 l-11 margin-bottom-10">
-                            <p><b>Fax:</b> +90 212 803 03 23</p>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div></div></section>
-    <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 38, 51, 0.80);">
-
-    <!-- Bottom Footer -->
-    <section class="padding background-dark">
-        <div class="line">
-            <div class="s-12 l-6">
-                <p class="text-size-12">Copyright 2023, Transmena Shipping Company </p>
-            </div>
-            <div class="s-12 l-6">
-                </div>
-        </div>
-    </section>
-</footer>
+<?php include 'footer.php' ?>
+    </body>
 <script type="text/javascript" src="./tracking_files/responsee.js"></script>
 <script type="text/javascript" src="./tracking_files/owl.carousel.js"></script>
 <script type="text/javascript" src="./tracking_files/template-scripts.js"></script>

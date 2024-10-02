@@ -113,7 +113,6 @@ class TrackingAdminFormHandler extends DatabaseConnection
 
 
 if('tracking' == $_REQUEST['form_type'])
-
 {
     $trackingAdminFormHandler = new TrackingAdminFormHandler();
     $trackingAdminFormHandler->insertDatasIntoTracking();

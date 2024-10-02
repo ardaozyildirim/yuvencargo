@@ -12,16 +12,14 @@ abstract class DatabaseConnection {
 
 
 
-      if($_SERVER['SERVER_NAME'] == 'transmena.dev')
-
+      if($_SERVER['SERVER_NAME'] == 'localhost')
       {
-
           $servername = "localhost";
           $username = "root";
-          $password = "root";
-          $dbname = "transmenaDB";
+          $password = "";
+          $dbname = "yuvencargo";
       }
-      elseif($_SERVER['SERVER_NAME'] == 'transmena.com.tr'){
+      elseif($_SERVER['SERVER_NAME'] == 'yuvencargo.com'){
 
           $servername = "localhost";
           $username = "transmena_db_usr";
