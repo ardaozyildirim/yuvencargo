@@ -105,7 +105,7 @@ icon: "warning",});
                 <span></span>
                 <span></span>
                 <span></span>
-                <button class="animated-border-button" style="position: relative; background: #f83c44;border: none;font-size: 16pxcolor: white padding: 10px 20px;border-radius: 5px;  cursor:pointer overflow: hidden;">Track Your Package</button>
+                <button class="animated-border-button" style="position: relative; background: #f83c44;border: none;font-size: 16pxcolor: white padding: 10px 20px;border-radius: 5px;  cursor:pointer overflow:hidden">Track Your Package</button>
             </a>
         </form>
     </div>

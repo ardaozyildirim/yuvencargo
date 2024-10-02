@@ -110,6 +110,10 @@
     </style>
     <!-- Main Content of the Page -->
 
+    <!-- Back to Top -->
+   <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+   
     <!-- About Start -->
 
 
@@ -141,9 +145,11 @@
         </div>
     </section>
 
+    
+
         <!-- Feature Start -->
-        <div class="container-fluid overflow-hidden py-5 px-lg-0">
-        <div class="container feature py-5 px-lg-0">
+        <div class="container-fluid overflow-hidden pt-5 px-lg-0">
+        <div class="container feature pt-5 px-lg-0">
             <div class="row g-5 mx-lg-0">
                 <div class="col-lg-6 feature-text wow fadeInUp" data-wow-delay="0.1s">
                     <h6 class="text-secondary text-uppercase mb-3">Our Features</h6>
@@ -227,9 +233,7 @@
     <!-- About End -->
 
 
-   <!-- Back to Top -->
-   <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
-
+   
 
     <?php include 'footer.php' ?>
 
