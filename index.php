@@ -69,7 +69,7 @@
                         <div class="row justify-content-start">
                             <div class="col-10 col-lg-8">
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">Transport & Logistics Solution</h5>
-                                <h1 class="display-3 text-white animated slideInDown mb-4">Tailored Global Logistics <span class="text-primary">Solutions</span> with Yuven World Cargo</h1>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Global Logistics <span class="text-primary">Solutions</span> with Yuven World Cargo</h1>
                                 <p class="fs-5 fw-medium text-white mb-4 pb-2">At Yuven World Cargo, we offer tailored logistics services, leveraging our extensive network and industry expertise to deliver cost-effective and timely transportation solutions across the globe.</p>
                                 <a href="about.php" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
                             </div>
@@ -212,31 +212,31 @@
                         </div>
                     </div>
                 </div>
-                </div>
-                        </div>
-                    </div>
-             
-                <!-- Quote End -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Quote End -->
 
 
 
 
 
-                <!-- Back to Top -->
-                <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
-                <!-- JavaScript Libraries -->
-                <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-                <script src="lib/wow/wow.min.js"></script>
-                <script src="lib/easing/easing.min.js"></script>
-                <script src="lib/waypoints/waypoints.min.js"></script>
-                <script src="lib/counterup/counterup.min.js"></script>
-                <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-                <!-- Template Javascript -->
-                <script src="js/main.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
@@ -248,7 +248,7 @@
     .footer {
         width: 100%;
         margin: 0;
-        padding: 0;
+        padding: 0 10px 0 10px;
     }
 </style>
 
