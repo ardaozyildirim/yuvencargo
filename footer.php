@@ -1,6 +1,6 @@
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
-        <div class="container py-5">
+        <div class="container-fluid py-5">
             <div class="row g-5 justify-content-between">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Address</h4>
