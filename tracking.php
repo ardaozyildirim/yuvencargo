@@ -86,44 +86,38 @@ icon: "warning",});
 
 ?>
 
+
+
 <!-- MAIN -->
 <main role="main">
 <!-- Content -->
 <div class="container">
 
     <div class="login-box">
-        <h2 class="blbookingno">B/L Booking No</h2>
+        <h2 class="blbookingno">Global Package Tracking</h2>
+        <p style="color: #ffffff; font-size: 14px; margin-bottom: 20px;">Easily track your packages worldwide and stay updated on every step of your delivery journey.</p>
         <form method="POST" action="TrackingFormHandler.php">
             <div class="user-box">
-                <input type="text" name="trackingCode" required="">
-                <label>Enter Your B/L No</label>
+                <input type="text" name="trackingCode" required="" placeholder="Enter tracking number">
             </div>
             <a class="aclass">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-                <button style="background: none; border: none; font-size: 13px; color: white;">Search</button>
+                <button style="background: #e15361; border: none; font-size: 16px; color: white; padding: 10px 20px; border-radius: 5px;">Track Your Package</button>
             </a>
         </form>
     </div>
 </div>
 
-    <!-- PAGE CONTENT ENDING -->
-   <!-- Back to Top -->
-   <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-    <?php include 'footer.php' ?>
-
-    <script type="text/javascript" src="./tracking_files/responsee.js"></script>
-<script type="text/javascript" src="./tracking_files/owl.carousel.js"></script>
-<script type="text/javascript" src="./tracking_files/template-scripts.js"></script>
-
 
 <style>
-/* Login Box Container */
+    body {
+        background-color: rgba(255, 85, 0, 0.07);
+}
 .login-box {
-    width: 400px;
+    width: 500px;
     padding: 40px;
     position: relative;
     margin: 100px auto;
@@ -135,172 +129,46 @@ icon: "warning",});
     font-family: 'Arial', sans-serif;
 }
 
-/* Title Styling */
 .blbookingno {
-    margin: 0 0 30px;
+    margin: 0 0 10px;
     padding: 0;
-    font-size: 24px;
+    font-size: 26px;
     color: #fff;
 }
 
-/* Input Field Styling */
 .user-box {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .user-box input {
     width: 100%;
-    padding: 10px 0;
+    padding: 15px;
     font-size: 16px;
-    color: #fff;
-    margin-bottom: 30px;
+    color: #333;
     border: none;
-    border-bottom: 2px solid #fff;
-    outline: none;
-    background: transparent;
+    border-radius: 5px;
+    background-color: #f0f0f0;
 }
 
-/* Label Styling */
-.user-box label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    pointer-events: none;
-    transition: 0.5s;
-}
-
-/* On Focus Label Effect */
-.user-box input:focus~label,
-.user-box input:valid~label {
-    top: -20px;
-    left: 0;
-    color: #03e9f4;
-    font-size: 12px;
-}
-
-/* Button Styling */
 .aclass {
-    position: relative;
     display: inline-block;
-    padding: 10px 20px;
-    color: #f83c44;
+    background-color: transparent;
+    color: #e15361;
     font-size: 16px;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 4px;
-    overflow: hidden;
-    transition: 0.5s;
-    margin-top: 40px;
-    border-radius: 5px;
+    margin-top: 20px;
 }
 
-.aclass:hover {
-    background: #f83c44;
-    color: #f83c44;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff, 0 0 100px #fff;
-}
-
-/* Button Animations */
-.aclass span {
-    position: absolute;
-    display: block;
-}
-
-.aclass span:nth-child(1) {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #fff);
-    animation: btn-anim1 1s linear infinite;
-}
-
-@keyframes btn-anim1 {
-    0% {
-        left: -100%;
-    }
-
-    50%,
-    100% {
-        left: 100%;
-    }
-}
-
-.aclass span:nth-child(2) {
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #fff);
-    animation: btn-anim2 1s linear infinite;
-    animation-delay: 0.25s;
-}
-
-@keyframes btn-anim2 {
-    0% {
-        top: -100%;
-    }
-
-    50%,
-    100% {
-        top: 100%;
-    }
-}
-
-.aclass span:nth-child(3) {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, #fff);
-    animation: btn-anim3 1s linear infinite;
-    animation-delay: 0.5s;
-}
-
-@keyframes btn-anim3 {
-    0% {
-        right: -100%;
-    }
-
-    50%,
-    100% {
-        right: 100%;
-    }
-}
-
-.aclass span:nth-child(4) {
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #fff);
-    animation: btn-anim4 1s linear infinite;
-    animation-delay: 0.75s;
-}
-
-@keyframes btn-anim4 {
-    0% {
-        bottom: -100%;
-    }
-
-    50%,
-    100% {
-        bottom: 100%;
-    }
-}
-
-/* Search Button Styling */
 button {
     background: none;
     border: none;
     font-size: 16px;
     color: white;
     cursor: pointer;
+    padding: 10px 20px;
+    background-color: #e15361;
+    border-radius: 5px;
 }
+</style>
 
-</style>  
+<?php include 'footer.php' ?>
