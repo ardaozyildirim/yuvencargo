@@ -209,7 +209,7 @@ FROM events;
 
             if (isset($row)) {
                 // Construct the header string with all the parameters
-                $header_string = "Location: trackingResponse.php?tracking-number=" . $row['bl_number'];
+                $header_string = "Location: TrackingResponse.php?tracking-number=" . $row['bl_number'];
 
                 // Set the header string
                 header($header_string);
