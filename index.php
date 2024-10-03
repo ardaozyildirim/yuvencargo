@@ -223,6 +223,13 @@
         margin: 0;
         padding: 0 10px 0 10px;
     }
+
+    .row.g-5.mx-lg-0 {
+        width: 90%!important;
+        margin: 0 auto!important; /* Ortalamak için */
+        justify-content: space-around;
+    }
+
 </style>
 
 <?php include 'footer.php' ?>
