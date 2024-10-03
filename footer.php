@@ -25,7 +25,8 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
+        
         <div class="container">
         <div class="copyright">
     <div class="row">
