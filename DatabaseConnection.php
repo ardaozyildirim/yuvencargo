@@ -24,7 +24,7 @@ abstract class DatabaseConnection {
           $servername = "localhost";
           $username = "transmena_db_usr";
           $password = "*04mvW97r";
-          $dbname = "admin_transmena_db";
+          $dbname = "admin_yuvencargo_database";
       }
 
         // Create connection

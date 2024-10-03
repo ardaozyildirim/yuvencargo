@@ -52,8 +52,8 @@ require_once ($_SERVER['DOCUMENT_ROOT']) . "/TrackingFormHandler.php";
                         echo $tracking['vessel_name'] ?>
                 </td>
                 <td>
-                    <?php if(!empty($tracking['voyage_number']))
-                        echo $tracking['voyage_number'] ?>
+                    <?php if(!empty($tracking['voyager_number']))
+                        echo $tracking['voyager_number'] ?>
                 </td>
                 <td>
                     <?php if(!empty($tracking['container_qty']))

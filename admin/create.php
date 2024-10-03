@@ -13,7 +13,7 @@
             <input type="text" name="vessel_name" id="vessel_name">
 
             <label for="voyager_number">Voyage Number:</label>
-            <input type="text" name="voyage_number" id="voyager_number">
+            <input type="text" name="voyager_number" id="voyager_number">
 
             <label for="container_qty">Container Qty:</label>
             <input type="text" name="container_qty" id="container_qty">
