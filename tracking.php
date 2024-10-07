@@ -24,6 +24,8 @@
 <link rel="stylesheet" href="./tracking_files/owl.carousel.css">
 <link rel="stylesheet" href="./tracking_files/owl.theme.css">
 
+<link rel="icon" href="img/YUVEN WORLD CARGO COMPANY2_page-000.png"/>
+
 
    <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
