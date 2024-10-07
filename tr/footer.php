@@ -10,11 +10,11 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Hızlı Bağlantılar</h4>
-                    <a class="btn btn-link" href="index-tr.php">Anasayfa</a>
-                    <a class="btn btn-link" href="about-tr.php">Hakkımızda</a>
-                    <a class="btn btn-link" href="service-tr.php">Hizmetlerimiz</a>
-                    <a class="btn btn-link" href="tracking-tr.php">Takip</a>
-                    <a class="btn btn-link" href="contact-tr.php">İletişim</a>
+                    <a class="btn btn-link" href="index.php">Anasayfa</a>
+                    <a class="btn btn-link" href="about.php">Hakkımızda</a>
+                    <a class="btn btn-link" href="service.php">Hizmetlerimiz</a>
+                    <a class="btn btn-link" href="tracking.php">Takip</a>
+                    <a class="btn btn-link" href="contact.php">İletişim</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Bülten</h4>
