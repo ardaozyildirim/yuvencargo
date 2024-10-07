@@ -205,6 +205,126 @@
 
 
 
+
+    <div class="language-selector">
+    <select id="language" onchange="changeLanguage()">
+        <option value="en">English</option>
+        <option value="tr">Türkçe</option>
+    </select>
+</div>
+
+<script>
+function changeLanguage() {
+    const language = document.getElementById('language').value;
+    let currentUrl = window.location.href;
+    
+    // Sayfa adını al
+    let page = currentUrl.split('/').pop();
+    
+    // Eğer sayfa Türkçe ise "-tr" kontrolü yap
+    if (page.includes('-tr')) {
+        page = page.replace('-tr', ''); // Eğer Türkçe ise normal sayfaya döndür
+    }
+    
+    if (language === 'tr') {
+        let newPage = page.replace('.php', '-tr.php'); // Türkçe sürüme yönlendir
+        window.location.href = newPage;
+    } else {
+        let newPage = page.replace('-tr.php', '.php'); // İngilizce sürüme yönlendir
+        window.location.href = newPage;
+    }
+
+    // Seçilen dili tarayıcıda sakla
+    document.cookie = "language=" + language + ";path=/";
+}
+
+// Sayfa yüklendiğinde daha önce seçilen dili ayarla
+window.onload = function() {
+    let language = getCookie("language") || "en"; // Varsayılan dil İngilizce
+    document.getElementById('language').value = language;
+}
+
+// Çerezden dil seçimini almak için yardımcı fonksiyon
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+</script>
+
+<style>
+    .language-selector {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.language-selector select {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .language-selector {
+        left: 10px;
+        bottom: 10px;
+        padding: 8px;
+    }
+    
+    .language-selector select {
+        font-size: 14px;
+        padding: 4px;
+    }
+}
+</style>
+
+<?php
+// Eğer dil seçimi varsa, çerezden dili oku
+$language = isset($_COOKIE['language']) ? $_COOKIE['language'] : 'en';
+
+// Eğer dil Türkçe ise sayfa "-tr.php" sürümüne yönlendir
+if ($language == 'tr' && !strpos($_SERVER['REQUEST_URI'], '-tr.php')) {
+    $newUrl = str_replace('.php', '-tr.php', $_SERVER['REQUEST_URI']);
+    header("Location: $newUrl");
+    exit();
+} elseif ($language == 'en' && strpos($_SERVER['REQUEST_URI'], '-tr.php')) {
+    // Eğer dil İngilizce ise ve şu an Türkçe sayfadaysa, İngilizceye yönlendir
+    $newUrl = str_replace('-tr.php', '.php', $_SERVER['REQUEST_URI']);
+    header("Location: $newUrl");
+    exit();
+}
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
 

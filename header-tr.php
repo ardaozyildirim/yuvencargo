@@ -8,11 +8,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0">
-    <a href="index.php" class="nav-item nav-link <?php if(basename($_SERVER['PHP_SELF']) == 'index.php'){echo 'active';} ?>">Home</a>
-    <a href="about.php" class="nav-item nav-link <?php if(basename($_SERVER['PHP_SELF']) == 'about.php'){echo 'active';} ?>">About</a>
-    <a href="service.php" class="nav-item nav-link <?php if(basename($_SERVER['PHP_SELF']) == 'service.php'){echo 'active';} ?>">Services</a>
-    <a href="tracking.php" class="nav-item nav-link <?php if(basename($_SERVER['PHP_SELF']) == 'tracking.php'){echo 'active';} ?>">Tracking</a>
-    <a href="contact.php" class="nav-item nav-link <?php if(basename($_SERVER['PHP_SELF']) == 'contact.php'){echo 'active';} ?>">Contact</a>
+    <a href="index-tr.php" class="nav-item nav-link <?php if(basename($_SERVER['PHP_SELF']) == 'index-tr.php'){echo 'active';} ?>">Anasayfa</a>
+    <a href="about-tr.php" class="nav-item nav-link <?php if(basename($_SERVER['PHP_SELF']) == 'about-tr.php'){echo 'active';} ?>">Hakkımızda</a>
+    <a href="service-tr.php" class="nav-item nav-link <?php if(basename($_SERVER['PHP_SELF']) == 'service-tr.php'){echo 'active';} ?>">Hizmetlerimiz</a>
+    <a href="tracking-tr.php" class="nav-item nav-link <?php if(basename($_SERVER['PHP_SELF']) == 'tracking-tr.php'){echo 'active';} ?>">Takip</a>
+    <a href="contact-tr.php" class="nav-item nav-link <?php if(basename($_SERVER['PHP_SELF']) == 'contact-tr.php'){echo 'active';} ?>">İletişim</a>
 </div>
 
             <h4 class="m-0 pe-lg-5 d-none d-lg-block"><i class="fa fa-headphones text-primary me-3"></i>+90 000 00 00</h4>
@@ -26,3 +26,4 @@
             vertical-align: middle;
         }
     </style>
+
