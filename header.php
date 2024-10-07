@@ -1,7 +1,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0">
         <a href="index.php" class="navbar-brand bg-primary d-flex align-items-center px-4 px-lg-5">
-            <h2 class="mb-2 text-white">Yuven Cargo</h2>
+            <img class="headerlogo" src="img/YUVEN WORLD CARGO COMPANY2_page-000.png" alt="">
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -19,4 +19,11 @@
         </div>
     </nav>
     <!-- Navbar End -->
+     
+    <style>
+        .headerlogo{
+            width: 70px;
+            vertical-align: middle;
+        }
+    </style>
 
