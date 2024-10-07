@@ -26,4 +26,6 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <link rel="icon" href="img/YUVEN WORLD CARGO COMPANY2_page-000.png"/>
 </head>
