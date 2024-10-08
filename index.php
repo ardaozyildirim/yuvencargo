@@ -215,25 +215,6 @@
 </html>
 
 
-
-
-<style>
-    .footer {
-        width: 100%;
-        margin: 0;
-        padding: 0 10px 0 10px;
-    }
-
-    .row.g-5.mx-lg-0 {
-        width: 90%!important;
-        margin: 0 auto!important; /* Ortalamak için */
-        justify-content: space-around;
-    }
-
-</style>
-
-
-
 <div class="language-selector">
     <select id="language" onchange="changeLanguage()">
         <option value="en">English</option>
@@ -241,113 +222,41 @@
     </select>
 </div>
 
+<?php include 'footer.php' ?>
+
 <script>
 function changeLanguage() {
     const language = document.getElementById('language').value;
-    let currentUrl = window.location.href;
-    
-    // Sayfa adını al
-    let page = currentUrl.split('/').pop();
-    
-    // Eğer sayfa Türkçe ise "-tr" kontrolü yap
-    if (page.includes('-tr')) {
-        page = page.replace('-tr', ''); // Eğer Türkçe ise normal sayfaya döndür
-    }
-    
+
+    // Mevcut URL'yi al
+    let currentUrl = window.location.pathname;
+
+    // Seçilen dile göre yönlendirme yap
     if (language === 'tr') {
-        let newPage = page.replace('.php', '-tr.php'); // Türkçe sürüme yönlendir
-        window.location.href = newPage;
+        // Eğer URL zaten /yuvencargo/tr/ içermiyorsa, URL'yi bu yapıya göre değiştir
+        if (!currentUrl.includes('/yuvencargo/tr/')) {
+            const newUrl = currentUrl.replace('/yuvencargo', '/yuvencargo/tr');
+            window.location.href = newUrl;
+        }
     } else {
-        let newPage = page.replace('-tr.php', '.php'); // İngilizce sürüme yönlendir
-        window.location.href = newPage;
+        // Eğer URL /yuvencargo/tr/ içeriyorsa, /tr/ kısmını kaldır
+        if (currentUrl.includes('/yuvencargo/tr/')) {
+            const newUrl = currentUrl.replace('/yuvencargo/tr', '/yuvencargo');
+            window.location.href = newUrl;
+        }
     }
-
-    // Seçilen dili tarayıcıda sakla
-    document.cookie = "language=" + language + ";path=/";
 }
 
-// Sayfa yüklendiğinde daha önce seçilen dili ayarla
+// Sayfa yüklendiğinde dil seçimini otomatik olarak ayarla
 window.onload = function() {
-    let language = getCookie("language") || "en"; // Varsayılan dil İngilizce
-    document.getElementById('language').value = language;
-}
+    // Mevcut URL'yi al
+    const currentUrl = window.location.pathname;
 
-// Çerezden dil seçimini almak için yardımcı fonksiyon
-function getCookie(cname) {
-    let name = cname + "=";
-    let decodedCookie = decodeURIComponent(document.cookie);
-    let ca = decodedCookie.split(';');
-    for(let i = 0; i < ca.length; i++) {
-        let c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
+    // Eğer URL '/yuvencargo/tr/' içeriyorsa, Türkçe seçili olsun
+    if (currentUrl.includes('/yuvencargo/tr/')) {
+        document.getElementById('language').value = 'tr';
+    } else {
+        document.getElementById('language').value = 'en';
     }
-    return "";
 }
 </script>
-
-<style>
-    .language-selector {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    z-index: 1000;
-    background-color: #f8f9fa;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.language-selector select {
-    padding: 5px;
-    font-size: 16px;
-    border: none;
-    background-color: transparent;
-}
-
-@media (max-width: 768px) {
-    .language-selector {
-        left: 10px;
-        bottom: 10px;
-        padding: 8px;
-    }
-    
-    .language-selector select {
-        font-size: 14px;
-        padding: 4px;
-    }
-}
-</style>
-
-<?php
-// Eğer dil seçimi varsa, çerezden dili oku
-$language = isset($_COOKIE['language']) ? $_COOKIE['language'] : 'en';
-
-// Eğer dil Türkçe ise sayfa "-tr.php" sürümüne yönlendir
-if ($language == 'tr' && !strpos($_SERVER['REQUEST_URI'], '-tr.php')) {
-    $newUrl = str_replace('.php', '-tr.php', $_SERVER['REQUEST_URI']);
-    header("Location: $newUrl");
-    exit();
-} elseif ($language == 'en' && strpos($_SERVER['REQUEST_URI'], '-tr.php')) {
-    // Eğer dil İngilizce ise ve şu an Türkçe sayfadaysa, İngilizceye yönlendir
-    $newUrl = str_replace('-tr.php', '.php', $_SERVER['REQUEST_URI']);
-    header("Location: $newUrl");
-    exit();
-}
-?>
-
-
-
-
-
-
-
-
-
-
-
-<?php include 'footer.php' ?>
