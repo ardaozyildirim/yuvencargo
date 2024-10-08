@@ -13,7 +13,7 @@
     <!-- Spinner Bitiş -->
 
 
-    <?php include 'header-tr.php'; ?>
+    <?php include 'header.php'; ?>
 
 
     <!-- Karusel Başlangıç -->
@@ -337,4 +337,4 @@ if ($language == 'tr' && !strpos($_SERVER['REQUEST_URI'], '-tr.php')) {
 
 
 
-<?php include 'footer-tr.php' ?>
+<?php include 'footer.php' ?>

@@ -43,7 +43,7 @@
     <!-- Spinner Bitiş -->
 
 
-    <?php include 'header-tr.php'; ?>
+    <?php include 'header.php'; ?>
 
     <div class="banner">
         <img src="img/cargo-container.jpg" alt="">
@@ -215,7 +215,7 @@
 
     <!-- Hakkımızda Bitiş -->
 
-    <?php include 'footer-tr.php' ?>
+    <?php include 'footer.php' ?>
 
 
     <!-- JavaScript Kütüphaneleri -->

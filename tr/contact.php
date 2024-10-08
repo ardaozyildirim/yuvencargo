@@ -42,7 +42,7 @@
     </div>
     <!-- Spinner Bitiş -->
 
-    <?php include 'header-tr.php'; ?>
+    <?php include 'header.php'; ?>
 
     <div class="banner">
         <img src="img/cargoplane.jpg" alt="">
@@ -155,7 +155,7 @@
     <!-- Geri Dön Butonu -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-    <?php include 'footer-tr.php' ?>
+    <?php include 'footer.php' ?>
 
     <!-- JavaScript Kütüphaneleri -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

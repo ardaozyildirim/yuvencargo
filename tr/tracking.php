@@ -31,7 +31,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<?php include 'header-tr.php' ?>
+<?php include 'header.php' ?>
 
 <!-- SAYFA İÇERİĞİ BAŞLANGICI -->
 
@@ -244,4 +244,4 @@ if ($language == 'tr' && !strpos($_SERVER['REQUEST_URI'], '-tr.php')) {
 
 
 
-<?php include 'footer-tr.php' ?>
+<?php include 'footer.php' ?>

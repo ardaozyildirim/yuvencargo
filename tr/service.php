@@ -42,7 +42,7 @@
     </div>
     <!-- Spinner Bitiş -->
 
-    <?php include 'header-tr.php'; ?>
+    <?php include 'header.php'; ?>
 
     <div class="banner">
         <img src="img/rsz_8.jpg" alt="">
@@ -365,4 +365,4 @@ if ($language == 'tr' && !strpos($_SERVER['REQUEST_URI'], '-tr.php')) {
 
 
 
-<?php include 'footer-tr.php'; ?>
+<?php include 'footer.php'; ?>
