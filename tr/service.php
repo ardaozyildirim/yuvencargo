@@ -283,12 +283,12 @@ function changeLanguage() {
     // Seçilen dile göre yönlendirme yap
     if (language === 'tr') {
         if (!currentUrl.includes('/tr/')) {
-            const newUrl = '/yuvencargo/tr' + currentUrl.replace('/yuvencargo', '');  // /yuvencargo/tr'ye yönlendir
+            const newUrl = 'yuvencargo.com/tr' + currentUrl.replace('yuvencargo.com', '');  // /yuvencargo/tr'ye yönlendir
             window.location.href = newUrl;
         }
     } else {
         if (currentUrl.includes('/tr/')) {
-            const newUrl = currentUrl.replace('/yuvencargo/tr', '/yuvencargo'); // /tr'yi kaldır ve kök dizine yönlendir
+            const newUrl = currentUrl.replace('yuvencargo.com/tr', 'yuvencargo.com'); // /tr'yi kaldır ve kök dizine yönlendir
             window.location.href = newUrl;
         }
     }
@@ -313,11 +313,11 @@ $language = isset($_COOKIE['language']) ? $_COOKIE['language'] : 'en';
 $currentUrl = $_SERVER['REQUEST_URI'];
 
 // Eğer dil Türkçe ise ve URL'de '/yuvencargo/tr/' yoksa Türkçe sayfalara yönlendir.
-if ($language == 'tr' && strpos($currentUrl, '/yuvencargo/tr/') === false) {
+if ($language == 'tr' && strpos($currentUrl, 'yuvencargo.com/tr/') === false) {
     // Türkçe sayfalara yönlendir.
-    $newUrl = '/yuvencargo/tr' . $currentUrl;
-    if ($currentUrl === '/' || $currentUrl === '/yuvencargo/index.php') {
-        $newUrl = '/yuvencargo/tr/index.php'; // Ana sayfa yönlendirmesi.
+    $newUrl = 'yuvencargo.com/tr' . $currentUrl;
+    if ($currentUrl === '/' || $currentUrl === 'yuvencargo.com/index.php') {
+        $newUrl = 'yuvencargo.com/tr/index.php'; // Ana sayfa yönlendirmesi.
     }
     header("Location: $newUrl");
     exit();
@@ -325,9 +325,9 @@ if ($language == 'tr' && strpos($currentUrl, '/yuvencargo/tr/') === false) {
 
 // Eğer dil İngilizce ise ve şu anda '/yuvencargo/tr/' dizinindeysek, kök dizine yönlendir.
 elseif ($language == 'en' && strpos($currentUrl, '/yuvencargo/tr/') !== false) {
-    $newUrl = str_replace('/yuvencargo/tr', '/yuvencargo', $currentUrl);
+    $newUrl = str_replace('yuvencargo.com/tr', 'yuvencargo.com', $currentUrl);
     if ($newUrl === '' || $newUrl === '/') {
-        $newUrl = '/yuvencargo/index.php'; // Ana sayfa yönlendirmesi.
+        $newUrl = 'yuvencargo.com/index.php'; // Ana sayfa yönlendirmesi.
     }
 
 }
